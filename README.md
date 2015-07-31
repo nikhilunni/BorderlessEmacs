@@ -21,3 +21,15 @@ index 08b8e3a..8880e9f 100644
                                    NSClosableWindowMask)
                          backing: NSBackingStoreBuffered
 `````
+
+### Build
+```bash
+git clone git://git.savannah.gnu.org/emacs.git
+cd emacs
+git checkout emacs-24
+patch src/nsterm.m emacs.patch
+make configure
+./configure --with-ns
+make install
+open nextstep/Emacs.app
+```
