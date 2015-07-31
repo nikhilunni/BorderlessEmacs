@@ -1,0 +1,14 @@
+diff --git a/src/nsterm.m b/src/nsterm.m
+index 08b8e3a..8880e9f 100644
+--- a/src/nsterm.m
++++ b/src/nsterm.m
+@@ -6117,9 +6117,6 @@ if (cols > 0 && rows > 0)
+   win = [[EmacsWindow alloc]
+             initWithContentRect: r
+                       styleMask: (NSResizableWindowMask |
+-#if MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_7
+-                                  NSTitledWindowMask |
+-#endif
+                                   NSMiniaturizableWindowMask |
+                                   NSClosableWindowMask)
+                         backing: NSBackingStoreBuffered
